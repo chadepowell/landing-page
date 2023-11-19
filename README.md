@@ -1,4 +1,4 @@
-# Roshane Forde -  Landing Page
+ # Landing Page
 
 This is a simple landing page. It is built with pure HTML, CSS and JavaScript. It is also responsive and mobile friendly.
 
