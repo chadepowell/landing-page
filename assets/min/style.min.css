@@ -86,7 +86,7 @@ ul {
   padding: 12px 30px;
   cursor: pointer;
   border: 2px solid #222;
-  border-radius: 3px;
+  border-radius: 13px;
   background-color: #222;
   color: #fff;
 }
@@ -237,6 +237,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 50px 0 50px;
 }
 header nav .logo img {
   max-width: 100%;
@@ -246,13 +247,15 @@ header nav ul {
   list-style: none;
   display: flex;
   margin: 0;
+  font-size: 20px;
+  font-weight: 500;
 }
 header nav ul li {
-  margin-right: 20px;
+  margin-right: 70px;
 }
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #222;
 }
 header nav ul li a:hover {
   text-decoration: underline;

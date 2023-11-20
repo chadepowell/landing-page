@@ -109,7 +109,7 @@ ul {
     padding: 12px 30px;
     cursor: pointer;
     border: 2px solid $black;
-    border-radius: 3px;
+    border-radius: 13px;
     background-color: $black;
     color: #fff;
     &.btn-danger {
@@ -254,6 +254,9 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 50px 0 50px;
+
+
         .logo {
             img {
                 max-width: 100%;
@@ -265,12 +268,14 @@ header {
             list-style: none;
             display: flex;
             margin: 0;
+            font-size: 20px;
+            font-weight: 500;
     
             li {
-                margin-right: 20px;
+                margin-right: 70px;
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: $black;
     
                     &:hover {
                     text-decoration: underline;
