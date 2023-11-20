@@ -261,6 +261,7 @@ header {
             img {
                 max-width: 100%;
                 height: auto;
+                margin-top: 5px;
             }
         }
         
@@ -292,6 +293,7 @@ header {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
         justify-content: space-between;
         padding-top: 170px;
         margin-right: auto;
@@ -310,9 +312,8 @@ header {
         }
 
         p {
-            font-size: 20px;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
 
@@ -326,14 +327,35 @@ header {
         position: relative;
 
         .image-container {
-             display: flex;
+             position: relative;
 
              img {
-                max-width: 30%;
-                height: auto;
-                border-radius: 8px;
-                margin-right: 10px;
+                border-radius: 30px;
+                width: 100%;
+                z-index: 1;
             }
+            .image-1 {
+                position: absolute;
+                left: -25px;
+                bottom: 0;
+                width: 200px;
+                border: 10px solid white;
+                z-index: 2;
+            }
+            .image-2-container {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .image-3 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 150px;
+                border: 10px solid white;
+                z-index: 2;
+            }
+
+            
         }
 
     }
