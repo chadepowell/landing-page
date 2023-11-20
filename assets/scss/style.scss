@@ -70,7 +70,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 56px;
+    
 }
 
 h2 {
@@ -254,7 +255,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 50px 0 50px;
 
 
         .logo {
@@ -285,4 +285,50 @@ header {
         }
     }
 }
-        
+   
+
+ .container {
+    &.hero-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        padding-top: 170px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .section-1 {
+        width: 100%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+
+    }
+
+    .section-2 {
+        width: 100%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+
+        img {
+            width: 72%;
+            height: 72%;
+        }
+    }
+
+ }
+       
