@@ -1,22 +1,16 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&display=swap);
 /*------------------------------------------------------------------------*/
 /* General */
 /*------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:before {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:focus {
@@ -162,7 +156,8 @@ ul {
 form .columns-2 {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 25px;
   margin-bottom: 25px;
 }
@@ -188,7 +183,9 @@ form .form-control, form .form-select {
   color: #4c4c4c;
 }
 form .form-select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 1rem center;
@@ -226,4 +223,37 @@ form .btn .loader {
   form .columns-2 {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/*------------------------------------------------------------------------*/
+/* Home */
+/*------------------------------------------------------------------------*/
+header {
+  background-color: #fff;
+  padding: 20px;
+  color: white;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo img {
+  max-width: 100%;
+  height: auto;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
 }
