@@ -310,6 +310,7 @@ header {
         }
 
         p {
+            font-size: 20px;
             color: #333;
             margin-bottom: 20px;
         }
@@ -324,10 +325,17 @@ header {
         margin-left: auto;
         position: relative;
 
-        img {
-            width: 72%;
-            height: 72%;
+        .image-container {
+             display: flex;
+
+             img {
+                max-width: 30%;
+                height: auto;
+                border-radius: 8px;
+                margin-right: 10px;
+            }
         }
+
     }
 
  }

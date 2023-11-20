@@ -280,6 +280,7 @@ header nav ul li a:hover {
   margin-bottom: 10px;
 }
 .container .section-1 p {
+  font-size: 20px;
   color: #333;
   margin-bottom: 20px;
 }
@@ -290,7 +291,12 @@ header nav ul li a:hover {
   margin-left: auto;
   position: relative;
 }
-.container .section-2 img {
-  width: 72%;
-  height: 72%;
+.container .section-2 .image-container {
+  display: flex;
+}
+.container .section-2 .image-container img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 10px;
 }
