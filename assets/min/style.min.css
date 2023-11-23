@@ -296,35 +296,33 @@ header nav ul li a {
 .container.hero-section {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
   justify-content: space-between;
-  padding-top: 170px;
   margin-right: auto;
   margin-left: auto;
 }
 .container .section-1 {
   width: 100%;
-  padding: 0;
+  padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
 }
 .container .section-1 h1 {
+  font-size: 40px;
   margin-bottom: 20px;
 }
 .container .section-1 p {
-  font-size: 18px;
+  font-size: 19px;
   color: #333;
   margin-bottom: 35px;
 }
 .container .section-2 {
   width: 100%;
-  padding: 0;
+  padding-top: 90px;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
+  grid-row-start: 1;
 }
 .container .section-2 .image-container {
   position: relative;
@@ -336,9 +334,9 @@ header nav ul li a {
 }
 .container .section-2 .image-container .image-1 {
   position: absolute;
-  left: -25px;
+  left: -9px;
   bottom: 0;
-  width: 190px;
+  width: 144px;
   border: 10px solid white;
   z-index: 2;
 }
@@ -350,7 +348,67 @@ header nav ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  width: 130px;
+  width: 100px;
   border: 10px solid white;
   z-index: 2;
+}
+@media (min-width: 992px) {
+  .container.hero-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container .section-1 {
+    width: 100%;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .container .section-1 p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 35px;
+  }
+  .container .section-2 {
+    width: 100%;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .container .section-2 .image-container {
+    position: relative;
+  }
+  .container .section-2 .image-container img {
+    border-radius: 30px;
+    width: 100%;
+    z-index: 1;
+  }
+  .container .section-2 .image-container .image-1 {
+    position: absolute;
+    left: -25px;
+    bottom: 0;
+    width: 190px;
+    border: 10px solid white;
+    z-index: 2;
+  }
+  .container .section-2 .image-container .image-2-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container .section-2 .image-container .image-3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 130px;
+    border: 10px solid white;
+    z-index: 2;
+  }
 }
