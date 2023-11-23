@@ -228,8 +228,9 @@ form .btn .loader {
 /*------------------------------------------------------------------------*/
 /* Home */
 /*------------------------------------------------------------------------*/
+/* mobile styles*/
 header {
-  background-color: #fff;
+  background-color: white;
   padding: 20px;
   color: white;
 }
@@ -239,26 +240,57 @@ header nav {
   align-items: center;
 }
 header nav .logo img {
-  max-width: 80%;
+  max-width: 50%;
   height: auto;
   margin-top: 5px;
 }
 header nav ul {
   list-style: none;
-  display: flex;
+  display: block;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 header nav ul li {
-  margin-right: 70px;
+  margin-right: 14px;
 }
 header nav ul li a {
   text-decoration: none;
   color: #222;
 }
-header nav ul li a:hover {
-  text-decoration: underline;
+@media (min-width: 992px) {
+  header {
+    background-color: #fff;
+    padding: 20px;
+    color: white;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .logo img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 5px;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  header nav ul li {
+    margin-right: 70px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
 }
 
 .container.hero-section {
