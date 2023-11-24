@@ -417,3 +417,58 @@ header nav ul li a {
     z-index: 2;
   }
 }
+
+/*------------------------------------------------------------------------*/
+/* Footer*/
+/*------------------------------------------------------------------------*/
+.container.footer-container {
+  background-color: blueviolet;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container.footer-container footer img {
+  max-width: 20%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.container.footer-container footer p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.container.footer-container footer .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.container.footer-container footer .social-icons li {
+  margin-right: 10px;
+}
+.container.footer-container footer .social-icons li i {
+  font-size: 24px;
+  color: white;
+}
+.container.footer-container footer form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container.footer-container footer form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.container.footer-container footer form button {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.container.footer-container footer p:last-child {
+  margin-top: 20px;
+  font-size: 14px;
+}
