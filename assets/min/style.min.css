@@ -238,6 +238,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 header nav .logo img {
   max-width: 50%;
@@ -246,10 +247,11 @@ header nav .logo img {
 }
 header nav ul {
   list-style: none;
-  display: block;
+  display: none;
   margin: 0;
   font-size: 16px;
   font-weight: 600;
+  flex-wrap: wrap;
 }
 header nav ul li {
   margin-right: 14px;
