@@ -270,7 +270,7 @@ header nav ul li a {
     align-items: center;
   }
   header nav .logo img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
     margin-top: 5px;
   }
@@ -370,6 +370,11 @@ header nav ul li a {
     margin-right: auto;
     margin-left: auto;
     position: relative;
+    grid-row-start: 1;
+  }
+  .container .section-1 h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
   }
   .container .section-1 p {
     font-size: 18px;

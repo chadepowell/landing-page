@@ -292,7 +292,7 @@ header {
 
             .logo {
                 img {
-                    max-width: 80%;
+                    max-width: 90%;
                     height: auto;
                     margin-top: 5px;
                 }
@@ -337,6 +337,7 @@ header {
         padding-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
+        
 
         h1 {
             font-size: 40px;
@@ -391,6 +392,7 @@ header {
 
     }
     @media(min-width: $large) { 
+       
         &.hero-section {
             width: 100%;
             display: grid;
@@ -401,15 +403,21 @@ header {
             margin-right: auto;
             margin-left: auto;
         }
-        
+    
         .section-1 {
             width: 100%;
             padding: 0;
             margin-right: auto;
             margin-left: auto;
             position: relative;
+            grid-row-start: 1;
 
-    
+            h1 {
+                font-size: 56px;
+                margin-bottom: 20px;
+            }
+
+            
             p {
                 font-size: 18px;
                 color: #333;
@@ -426,36 +434,38 @@ header {
 
             .image-container {
                 position: relative;
-   
+
                 img {
-                   border-radius: 30px;
-                   width: 100%;
-                   z-index: 1;
-               }
-               .image-1 {
-                   position: absolute;
-                   left: -25px;
-                   bottom: 0;
-                   width: 190px;
-                   border: 10px solid white;
-                   z-index: 2;
-               }
-               .image-2-container {
-                   padding-left: 40px;
-                   padding-right: 40px;
-               }
-               .image-3 {
-                   position: absolute;
-                   top: 0;
-                   right: 0;
-                   width: 130px;
-                   border: 10px solid white;
-                   z-index: 2;
+                border-radius: 30px;
+                width: 100%;
+                z-index: 1;
+                }
+                .image-1 {
+                    position: absolute;
+                    left: -25px;
+                    bottom: 0;
+                    width: 190px;
+                    border: 10px solid white;
+                    z-index: 2;
+                }
+                .image-2-container {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+                .image-3 {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 130px;
+                    border: 10px solid white;
+                    z-index: 2;
                 }
             }
-               
-        }
-    }  
+            
+        }   
+    }
+    
+
 
 }
   
