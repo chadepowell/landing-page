@@ -253,6 +253,13 @@ header nav ul {
   font-weight: 600;
   flex-wrap: wrap;
 }
+header nav ul.show {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  top: 80px;
+}
 header nav ul li {
   margin-right: 14px;
 }
@@ -301,6 +308,7 @@ header nav ul li a {
   grid-template-columns: 1fr;
   row-gap: 20px;
   justify-content: space-between;
+  padding-top: 130px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -362,7 +370,7 @@ header nav ul li a {
     -moz-column-gap: 100px;
          column-gap: 100px;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 330px;
     margin-right: auto;
     margin-left: auto;
   }

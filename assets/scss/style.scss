@@ -251,13 +251,13 @@ header {
     background-color: white;
     padding: 20px;
     color: white;
+    
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-
-
+        
         .logo {
             img {
                 max-width: 50%;
@@ -273,6 +273,13 @@ header {
             font-size: 16px;
             font-weight: 600;
             flex-wrap: wrap;
+            &.show {
+            display: block;
+            position: absolute;
+            width: 100%;
+            background: #fff;
+            top: 80px;
+            }
     
             li {
                 margin-right: 14px;
@@ -287,11 +294,12 @@ header {
         background-color: #fff;
         padding: 20px;
         color: white;
+        
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+             
             .logo {
                 img {
                     max-width: 90%;
@@ -330,6 +338,7 @@ header {
         grid-template-columns: 1fr;
         row-gap: 20px;
         justify-content: space-between;
+        padding-top: 130px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -401,7 +410,7 @@ header {
             grid-template-columns: 1fr 1fr;
             column-gap: 100px;
             justify-content: space-between;
-            padding-top: 50px;
+            padding-top: 330px;
             margin-right: auto;
             margin-left: auto;
         }
@@ -467,8 +476,6 @@ header {
         }   
     }
     
-
-
 }
 
   
