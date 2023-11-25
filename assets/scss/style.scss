@@ -258,6 +258,7 @@ header {
         align-items: center;
         flex-wrap: wrap;
         
+        
         .logo {
             img {
                 max-width: 160px;
@@ -340,7 +341,7 @@ header {
         grid-template-columns: 1fr;
         row-gap: 20px;
         justify-content: space-between;
-        padding-top: 30px;
+        padding-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -412,7 +413,8 @@ header {
             grid-template-columns: 1fr 1fr;
             column-gap: 100px;
             justify-content: space-between;
-            padding-top: 90px;
+            padding-top: 70px;
+            padding-bottom: 150px;
             margin-right: auto;
             margin-left: auto;
         }
