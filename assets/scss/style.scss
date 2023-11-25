@@ -274,14 +274,7 @@ header {
             font-size: 16px;
             font-weight: 600;
             flex-wrap: wrap;
-            &.show {
-            display: block;
-            position: absolute;
-            width: 100%;
-            background: #fff;
-            top: 80px;
-            }
-    
+            
             li {
                 margin-right: 14px;
                 a {
@@ -289,7 +282,33 @@ header {
                     color: $black;
                 }
             }
+
+            &.show {
+                display: block;
+                position: absolute;
+                width: 100%;
+                background: #fff;
+                top: 80px;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            .toggler {
+                display: block;
+                all: unset;
+                cursor: pointer;
+                outline: revert;
+                padding: 12px 0;
+                text-align: right;
+            }
+            .toggler svg {
+                fill: #222;
+                height: 42px;
+                width: 42px;
+              }
+        
         }
+
     }
     @media(min-width: $large) {
         background-color: #fff;

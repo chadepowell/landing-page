@@ -253,6 +253,13 @@ header nav ul {
   font-weight: 600;
   flex-wrap: wrap;
 }
+header nav ul li {
+  margin-right: 14px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #222;
+}
 header nav ul.show {
   display: block;
   position: absolute;
@@ -260,12 +267,21 @@ header nav ul.show {
   background: #fff;
   top: 80px;
 }
-header nav ul li {
-  margin-right: 14px;
+header nav ul .menu-toggle {
+  display: none;
 }
-header nav ul li a {
-  text-decoration: none;
-  color: #222;
+header nav ul .toggler {
+  display: block;
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+  padding: 12px 0;
+  text-align: right;
+}
+header nav ul .toggler svg {
+  fill: #222;
+  height: 42px;
+  width: 42px;
 }
 @media (min-width: 992px) {
   header {
