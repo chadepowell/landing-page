@@ -255,22 +255,24 @@ header nav ul {
 }
 header nav ul li {
   margin-right: 14px;
+  padding-bottom: 10px;
 }
 header nav ul li a {
   text-decoration: none;
   color: #222;
 }
-header nav ul.show {
+header nav .show {
   display: block;
   position: absolute;
   width: 100%;
-  background: #fff;
+  background: #fbedd3;
   top: 80px;
+  z-index: 99;
 }
-header nav ul .menu-toggle {
+header nav .menu-toggle {
   display: none;
 }
-header nav ul .toggler {
+header nav .toggler {
   display: block;
   all: unset;
   cursor: pointer;
@@ -278,10 +280,13 @@ header nav ul .toggler {
   padding: 12px 0;
   text-align: right;
 }
-header nav ul .toggler svg {
+header nav .toggler svg {
   fill: #222;
   height: 42px;
   width: 42px;
+}
+header nav .btn {
+  display: none;
 }
 @media (min-width: 992px) {
   header {
@@ -309,6 +314,7 @@ header nav ul .toggler svg {
   header nav ul li {
     margin-right: 30px;
     font-size: 17px;
+    padding-bottom: 0;
   }
   header nav ul li a {
     text-decoration: none;
@@ -316,6 +322,18 @@ header nav ul .toggler svg {
   }
   header nav ul li a:hover {
     text-decoration: underline;
+  }
+  header nav .show {
+    display: none;
+  }
+  header nav .menu-toggle {
+    display: none;
+  }
+  header nav .toggler {
+    display: none;
+  }
+  header nav .btn {
+    display: block;
   }
 }
 
