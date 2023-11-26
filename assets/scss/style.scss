@@ -277,10 +277,12 @@ header {
             
             li {
                 margin-right: 14px;
-                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-bottom: 20px;
                 a {
                     text-decoration: none;
                     color: $black;
+                    padding: 26px 13px;
                 }
             }
         }
@@ -288,7 +290,7 @@ header {
             display: block;
             position: absolute;
             width: 100%;
-            background: #fbedd3;
+            background: #F8F9FA;
             top: 80px;
             z-index: 99;
         }
