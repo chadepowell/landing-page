@@ -107,16 +107,15 @@ ul {
     all: unset;
     outline: revert;
     text-align: center;
-    padding: 12px 30px;
+    padding: 12px 45px;
     cursor: pointer;
     border: 2px solid #EE8E1D;
-    border-radius: 13px;
+    border-radius: 10px;
     background-color: #EE8E1D;
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     &.btn-light {
-        margin-left: 25px;
         border: 2px solid #757676;
         background-color: #fff;
         color: $black;
@@ -260,7 +259,6 @@ header {
             img {
                 max-width: 160px;
                 height: auto;
-                margin-top: 5px;
             }
         }
         ul {
@@ -272,22 +270,29 @@ header {
             flex-wrap: wrap;
             li {
                 margin-right: 14px;
-                padding-top: 10px;
-                padding-bottom: 20px;
+                &:first-child {
+                    padding-top: 20px;
+                }
+                &:last-child {
+                    padding-bottom: 20px;
+                }
                 a {
                     text-decoration: none;
                     color: $black;
-                    padding: 26px 13px;
+                    padding-bottom: 15px;
+                    padding-left: 20px;
+                    display: block;
                 }
             }
         }
         .show {
             display: block;
             position: absolute;
-            width: 90%;
+            width: 100%;
             background: #F8F9FA;
             top: 80px;
             z-index: 99;
+            margin-left: -20px;
         }
         .menu-toggle {
             display: none;
@@ -313,18 +318,23 @@ header {
         nav {
             .logo {
                 img {
-                    max-width: 150px;
-                    margin-top: 10px;
+                    max-width: 155px;
                 }
             }
             ul {
                 display: flex;
                 font-size: 20px;
                 li {
-                    margin-right: 30px;
-                    font-size: 17px;
-                    padding-bottom: 0;
+                    margin-right: 45px;
+                    font-size: 16px;
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
                     a {
+                        padding: 0;
                         &:hover {
                             text-decoration: underline;
                         }
@@ -357,18 +367,21 @@ header {
     margin-right: auto;
     margin-left: auto;
     .section-1 {
-        width: 100%;
         padding-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
         h1 {
             font-size: 40px;
+            margin-top: 40px;
             margin-bottom: 20px;
         }
         p {
             font-size: 19px;
             color: #333;
             margin-bottom: 35px;
+        }
+        .btn-light {
+            margin-left: 20px;
         }
     }
     .section-2 {
@@ -387,8 +400,8 @@ header {
             .image-1 {
                 position: absolute;
                 left: -9px;
-                bottom: 0;
-                width: 144px;
+                bottom: -30px;
+                width: 140px;
                 border: 10px solid white;
                 z-index: 2;
             }
@@ -398,9 +411,9 @@ header {
             }
             .image-3 {
                 position: absolute;
-                top: 0;
+                top: -25px;
                 right: 0;
-                width: 100px;
+                width: 110px;
                 border: 10px solid white;
                 z-index: 2;
             }
@@ -409,14 +422,15 @@ header {
     @media(min-width: $large) { 
         grid-template-columns: 1fr 1fr;
         column-gap: 100px;
-        padding-top: 70px;
-        padding-bottom: 150px;
+        padding-top: 90px;
+        padding-bottom: 100px;
         .section-1 {
             padding: 0;
             position: relative;
             grid-row-start: 1;
             h1 {
                 font-size: 56px;
+                margin-top: 0;
             }
             p {
                 font-size: 18px;
@@ -429,10 +443,12 @@ header {
                 position: relative;
                 .image-1 {
                     left: -25px;
-                    width: 190px;
+                    bottom: -40px;
+                    width: 210px;
                 }
                 .image-3 {
                     width: 130px;
+                    top: -40px;
                 }
             }
         }   
