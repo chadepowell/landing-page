@@ -1,12 +1,17 @@
-# Roshane Forde -  Landing Page
 
-This is a simple landing page. It is built with pure HTML, CSS and JavaScript. It is also responsive and mobile friendly.
+# landing-page
 
-## Development
+This was a practice project, where I developed a landing page with a responsive navigation bar, an enticing hero section including a "Get Started" button, and carefully positioned images. Overcoming the challenge of seamless navigation on smaller screens, I implemented a refined JavaScript solution for a smooth menu transition, ensuring a visually pleasing and user-friendly experience on both desktop and mobile devices
 
-1. Run `npm install` and `npm run dev or watch` to make changes.
-2. Run `npm run production` to remove dev files, minify assets and copy required files to the dist folder.
 
-<br />
+## Screenshots
 
-If you need any assistance, don't hesitate to let me know. I'll be happy to help!
+![App Screenshot](https://codewithchade.com/wp-content/uploads/2023/11/landingpage-1024x530.jpg)
+
+
+## Tech Stack
+
+HTML, CSS, Sass (SCSS), JavaScript, Webpack
+
+
+
