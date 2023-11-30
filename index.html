@@ -9,11 +9,54 @@
     <link rel="stylesheet" href="assets/min/style.min.css">
 </head>
 <body>
+    <header class="container ">
+        <nav>
+            <div class="logo">
+                <img src="/assets/img/logo.png" alt="">
+            </div>
+
+            <button class="toggler" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                </svg>
+            </button>
+
+            <ul>
+              <li><a href="#">Home</a></li>  
+              <li><a href="#">Agents</a></li> 
+              <li><a href="#">Why us?</a></li> 
+              <li><a href="#">About</a></li>
+            </ul>
+
+            <button class="btn">Get Started</button>
+        </nav>
+    </header>
+
     <main>
-        <div class="container">
-            <h1>Landing Page</h1>
+        <div class="container hero-section">
+            <div class="section-1">
+                <h1>Elevate Your Space,<br>Where Design Meets Harmony</h1>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+
+                <button class="btn btn">Get Started</button>
+                <button class="btn btn-light">Learn More</button>
+            </div>
+
+            <div class="section-2">
+                <div class="image-container">
+                    <img src="assets/img/image2.jpg" alt="mirror" class="image-1">
+
+                    <div class="image-2-container">
+                        <img src="assets/img/image1.jpg" alt="living-room" class="image-2">
+                    </div>
+
+                    <img src="assets/img/image3.jpg" alt="yellow-chair" class="image-3">
+                </div>
+            </div>
         </div>
     </main>
+
     <!-- JS -->
     <script src="assets/min/script.min.js"></script>
 </body>
